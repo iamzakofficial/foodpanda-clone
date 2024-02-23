@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #E21B70;
+}
+
+body {
+  font-family: "Open Sans";
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+nav.active {
+  box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+}
+
+nav > .logo {
+  color: var(--primary-color);
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+nav > .logo > svg {
+  margin-right: 0.3rem;
+  display: none;
+}
+
+nav > svg {
+  cursor: pointer;
+}
+
+.cart-icon {
+  cursor: pointer;
+}
+
+.login-btn, .signup-btn, .lang-btn {
+  display: none;
+}
+
+/* Hero Section */
+
+section.hero {
+  padding: 0 1rem;
+  height: 200px;
+  border: 2px solid transparent;
+  position: relative;
+}
+
+.hero > h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-top: 3rem;
+  min-width: 220px;
+  width: 40%;
+  line-height: 1.7;
+}
+
+.hero .bg-wrapper {
+  /* border: 1px solid red; */
+  position: absolute;
+  width: 54%;
+  margin-left: 46%;
+  background: url('./images/hero-home.webp');
+  height: 100%;
+  z-index: -1;
+  float: right;
+  max-height: 335px;
+  background-size: cover;
+}
+
+.hero .actions {
+  /* border: 1px solid black; */
+  margin-top: 6rem;
+}
+
+.actions .input-container {
+  position: relative;
+}
+
+.actions input {
+  width: 100%;
+  padding: 1.3rem 1rem;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid #dcdcdc;
+  color: #333;
+  font-size: 0.9rem;
+  box-shadow: 0 0.3rem 2rem rgb(0,0,0 /10%);
+}
+
+.actions input::placeholder {
+  color: darkgray;
+}
+
+.input-container svg, .input-container span {
+  position: absolute;
+  color: #E21B70;
+  font-weight: 600;
+}
+
+.input-container span {
+  top: 20px;
+  right: 20px;
+}
+
+.input-container svg {
+  top: 20px;
+  right: 110px;
+}
+
+.actions button {
+  background-color: #E21B70;
+  color: #FFFFFF;
+  border: none;
+  padding: 0 5rem;
+  height: 58px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+@media screen and (min-width:768px) {
+  nav >.logo > svg {
+    display: inline;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .profile-icon {
+    display: none;
+  }
+  
+  .right-nav-items {
+    display: flex;
+    justify-content: space-between;
+    min-width: 20%;
+    align-items: center
+  }
+
+  .lang-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    padding: 0.3rem 0.5rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+  }
+
+  .login-btn, .signup-btn {
+    display: inline-flex;
+    border: 1px solid #e21b70;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    margin-right: 0.5rem;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .login-btn {
+    color: #e21b70;
+    background-color: transparent;
+  }
+
+  .signup-btn {
+    color: #FFFFFF;
+    background-color: #E21B70;
+  }
+}
