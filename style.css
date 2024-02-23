@@ -81,8 +81,7 @@ section.hero {
 }
 
 .hero .actions {
-  /* border: 1px solid black; */
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
 
 .actions .input-container {
