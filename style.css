@@ -12,6 +12,11 @@ body {
   font-family: "Open Sans";
 }
 
+.max-w-xl {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -58,7 +63,7 @@ section.hero {
   position: relative;
 }
 
-.hero > h3 {
+.hero  h1 {
   font-size: 1.1rem;
   font-weight: 700;
   margin-top: 3rem;
@@ -96,7 +101,7 @@ section.hero {
   border: 1px solid #dcdcdc;
   color: #333;
   font-size: 0.9rem;
-  box-shadow: 0 0.3rem 2rem rgb(0,0,0 /10%);
+  box-shadow: 0 0.3rem 2rem rgb(0 0 0 /10%);
 }
 
 .actions input::placeholder {
@@ -136,6 +141,48 @@ section.hero {
   nav >.logo > svg {
     display: inline;
   }
+
+  .hero  h1 {
+    font-size: 2rem;
+    width: 70%;
+  }
+
+  section.hero {
+    padding: 0 2rem;
+  }
+
+  .hero .bg-wrapper {
+    max-height: 900px;
+  }
+
+  .actions input {
+    box-shadow: none;
+  }
+
+  .hero .actions {
+    background-color: #FFFFFF;
+    box-shadow: 0 0.3rem 2rem rgb(0 0 0 /10%);
+    padding: 1rem;
+    max-width: 960px;
+  }
+
+  .actions {
+    display: flex;
+  }
+
+  .actions .input-container {
+    width: 80%;
+  }
+
+  .actions button {
+    margin: 0;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+  }
+
 }
 
 @media screen and (min-width:960px) {
@@ -143,6 +190,11 @@ section.hero {
     display: none;
   }
   
+  /* .hero  h1 {
+    font-size: 2rem;
+    width: 70%;
+  } */
+
   .right-nav-items {
     display: flex;
     justify-content: space-between;
@@ -170,6 +222,14 @@ section.hero {
     font-weight: 600;
   }
   
+  /* section.hero {
+    padding: 0 2rem;
+  }
+*/
+  .hero .bg-wrapper {
+    height: 400px;
+  } 
+
   .login-btn {
     color: #e21b70;
     background-color: transparent;
@@ -178,5 +238,51 @@ section.hero {
   .signup-btn {
     color: #FFFFFF;
     background-color: #E21B70;
+  }
+
+  /* .actions input {
+    box-shadow: none;
+  }
+
+  .hero .actions {
+    background-color: #FFFFFF;
+    box-shadow: 0 0.3rem 2rem rgb(0 0 0 /10%);
+    padding: 1rem;
+    max-width: 960px;
+  }
+
+  .actions {
+    display: flex;
+  }
+
+  .actions .input-container {
+    width: 80%;
+  }
+
+  .actions button {
+    margin: 0;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+  } */
+
+}
+
+@media screen and (min-width:1264px) {
+  .hero .bg-wrapper {
+    max-height: 500px;
+    margin-left: 60%;
+  }
+
+  .hero h1 {
+    font-size: 2.3rem;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .hero .bg-wrapper {
+    max-height: 550px;
   }
 }
