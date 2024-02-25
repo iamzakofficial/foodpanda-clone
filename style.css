@@ -10,6 +10,7 @@
 
 body {
   font-family: "Open Sans";
+  overflow-x: hidden !important;
 }
 
 .max-w-xl {
@@ -137,6 +138,72 @@ section.hero {
   margin-top: 1rem;
 }
 
+/* Partners Section */
+
+section.partners {
+  margin: 14rem 0 4rem 0;
+  position: relative;
+}
+
+.partners .backdrop-text{
+  padding: 0 2rem;
+  font-size: 4.5rem;
+  color: rgba(188, 186, 186, 0.12);
+  font-weight: 900;
+  position: absolute;
+  top: -40px;
+  left: -10px;
+  text-transform: uppercase;
+}
+
+  .partners .caption {
+  padding: 0 2rem;
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+  }
+
+  .partners .background-image {
+    background: url('./images/partner-bg.png');
+    min-height: 280px;
+    background-size: cover;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .partners .content {
+  padding: 0 2rem;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 28px 0 rgb(0 0 0 /12%);
+  border-radius: 1rem;
+  margin: 0 1rem;
+  margin-top: -4rem;
+  padding: 1rem;
+  }
+
+  .content p {
+    font-size: 0.9rem;
+    color: rgb(176,174,174);
+  }
+
+  .content .header-text {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: rgb(18, 17, 17);
+  }
+
+  .content button {
+    background-color: #E21B70;
+    color: #FFFFFF;
+    border: none;
+    padding: 0 5rem;
+    height: 50px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+  }
+
 @media screen and (min-width:768px) {
   nav >.logo > svg {
     display: inline;
@@ -189,11 +256,6 @@ section.hero {
   .profile-icon {
     display: none;
   }
-  
-  /* .hero  h1 {
-    font-size: 2rem;
-    width: 70%;
-  } */
 
   .right-nav-items {
     display: flex;
@@ -221,11 +283,7 @@ section.hero {
     cursor: pointer;
     font-weight: 600;
   }
-  
-  /* section.hero {
-    padding: 0 2rem;
-  }
-*/
+
   .hero .bg-wrapper {
     height: 400px;
   } 
@@ -240,33 +298,12 @@ section.hero {
     background-color: #E21B70;
   }
 
-  /* .actions input {
-    box-shadow: none;
-  }
+  /* Partners Section */
 
-  .hero .actions {
-    background-color: #FFFFFF;
-    box-shadow: 0 0.3rem 2rem rgb(0 0 0 /10%);
-    padding: 1rem;
-    max-width: 960px;
+  section.partners {
+    margin-top: 18rem;
+    
   }
-
-  .actions {
-    display: flex;
-  }
-
-  .actions .input-container {
-    width: 80%;
-  }
-
-  .actions button {
-    margin: 0;
-    width: 15%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 1rem;
-  } */
 
 }
 
