@@ -16,6 +16,7 @@ body {
 .max-w-xl {
   max-width: 1300px;
   margin: 0 auto;
+  position: relative;
 }
 
 nav {
@@ -129,7 +130,6 @@ section.hero {
   background-color: #E21B70;
   color: #FFFFFF;
   border: none;
-  padding: 0 5rem;
   height: 58px;
   border-radius: 8px;
   font-weight: 600;
@@ -154,6 +154,7 @@ section.partners {
   top: -40px;
   left: -10px;
   text-transform: uppercase;
+  z-index: -2;
 }
 
   .partners .caption {
@@ -166,6 +167,7 @@ section.partners {
     background: url('./images/partner-bg.png');
     min-height: 280px;
     background-size: cover;
+    background-position: center;
     height: 100%;
     z-index: -1;
   }
@@ -250,6 +252,41 @@ section.partners {
     margin-left: 1rem;
   }
 
+  /* Partners Section */
+
+  .partners .backdrop-text {
+    padding: 0 3rem;
+  }
+
+  .partners .caption {
+    padding: 0 3rem;
+  }
+
+  .partners .background-image {
+    min-height: 504px;
+  }
+
+  .partners .content {
+    margin: 0 3rem;
+    margin-top: -11.5rem;
+    max-width: 450px;
+    padding: 2rem;
+  }
+  
+  .content p {
+     font-size: 1rem;
+  }
+
+  .content .header-text {
+    font-size: 1.5rem;
+  }
+
+  .content button {
+    font-size: 1rem;
+    width: 150px;
+    padding: 0;
+
+  }
 }
 
 @media screen and (min-width:960px) {
@@ -301,8 +338,20 @@ section.partners {
   /* Partners Section */
 
   section.partners {
-    margin-top: 18rem;
-    
+    margin-top: 18rem; 
+  }
+
+  .partners .caption {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .partners .content {
+    max-width: 650px;
+  }
+
+  .content .header-text {
+    font-size: 1.7rem;
   }
 
 }
@@ -316,10 +365,25 @@ section.partners {
   .hero h1 {
     font-size: 2.3rem;
   }
+
+  /* Partners Section */
+  .partners .content {
+    max-width: 550px;
+  }
+
+  .partners .backdrop-text {
+    font-size: 10rem;
+    top: -100px;
+    left: -40px;
+  }
+
 }
 
 @media screen and (min-width:1440px) {
   .hero .bg-wrapper {
     max-height: 550px;
   }
+
+  /* Partners Section */
+
 }
