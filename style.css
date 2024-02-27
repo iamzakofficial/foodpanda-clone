@@ -257,27 +257,70 @@ section.partners {
 
   .app {
     background-color: #E21B70;
+    min-height: 485px;
+    z-index: -1;
+    
   }
 
-  .app .caption {}
+  .app .caption {
+    display: none;
+  }
 
-  .app .backdrop-text {}
+  .app .backdrop-text {
+    z-index: 1;
+  }
 
-  .app .max-w-xl {}
+  .app .max-w-xl {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    text-align: left;
+    padding: 1rem;
+  }
 
-  .app .image-container {}
+  .app .image-container {
+    position: relative;
+    max-width: 424px;
+    min-height: 250px;
+    width: 100%;
+    text-align: center;
+  }
 
-  .image-container img {}
+  .image-container img {
+    position: absolute;
+    width: 100%;
+    max-width: 424px;
+    z-index: 2;
+    margin-top: -80px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   .app .content-container {}
 
-  .content-container .sub-heading {}
+  .content-container .sub-heading {
+    width: 100%;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
 
-  .content-container .text {}
+  .content-container .text {
+    font-size: 0.9rem;
+    margin: 1rem 0;
+  }
 
-  .content-container .buttons-container {}
+  .content-container .buttons-container {
+    display: flex;
+    justify-content: center;
+  }
 
-  .buttons-container .center-img {}
+  .buttons-container .center-img {
+    margin: 0 1rem;
+  }
   
 
   /* Media Queries */
@@ -360,8 +403,11 @@ section.partners {
     font-size: 1rem;
     width: 150px;
     padding: 0;
-
   }
+
+  /* App Section */
+
+  
 }
 
 @media screen and (min-width:960px) {
