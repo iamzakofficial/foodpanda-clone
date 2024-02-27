@@ -253,7 +253,34 @@ section.partners {
     border-radius: 10px;
   }
 
+  /* App Section */
 
+  .app {
+    background-color: #E21B70;
+  }
+
+  .app .caption {}
+
+  .app .backdrop-text {}
+
+  .app .max-w-xl {}
+
+  .app .image-container {}
+
+  .image-container img {}
+
+  .app .content-container {}
+
+  .content-container .sub-heading {}
+
+  .content-container .text {}
+
+  .content-container .buttons-container {}
+
+  .buttons-container .center-img {}
+  
+
+  /* Media Queries */
 @media screen and (min-width:768px) {
   nav >.logo > svg {
     display: inline;
