@@ -322,6 +322,23 @@ section.partners {
     margin: 0 1rem;
   }
   
+  /* Office */
+  .office{
+    margin-top: 10rem;
+  }
+
+  .office .background-image {
+    background: url('./images/office-bg.png');
+    min-height: 280px;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .office .content {
+    margin-top: -10rem !important;
+  }
 
   /* Media Queries */
 @media screen and (min-width:768px) {
