@@ -407,7 +407,53 @@ section.partners {
 
   /* App Section */
 
+  .app {
+    min-height: 314px;
+  }
+
+  .app .caption{
+    display: block;
+    color: #000000;
+    margin-top: -4rem;
+    margin-left: -30rem;
+  }
+
+  .app .backdrop-text{
+    margin-top: -3rem;
+  }
+
+  .app .max-w-xl{
+    flex-direction: row-reverse;
+  }
+
+  .app .content-container{
+    width: 55%;
+    text-align: left;
+    margin-right: auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .app .image-container{
+    margin-top: -3rem;
+    width: 45%;
+    text-align: right;
+    max-height: 480px;
+    margin-right: 10rem;
+  }
   
+  .image-container img{
+    min-width: 450px;
+  }
+
+  .content-container .sub-heading{
+    font-size: 1.8rem;
+  }
+
+  .content-container .buttons-container{
+    margin-top: 1rem;
+  }
 }
 
 @media screen and (min-width:960px) {
@@ -480,6 +526,20 @@ section.partners {
     flex-wrap: wrap;
     overflow: hidden;
     justify-content: space-evenly;
+  }
+
+  /* App section */
+
+  .app{
+    padding: 0 2rem;
+  }
+
+  .image-container img{
+    min-width: 600px;
+  }
+
+  .content-container .buttons-container{
+    margin-top: 2rem;
   }
 }
 
