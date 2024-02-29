@@ -300,7 +300,9 @@ section.partners {
     margin-right: auto;
   }
 
-  .app .content-container {}
+  .app .content-container {
+    max-width: 100%;
+  }
 
   .content-container .sub-heading {
     width: 100%;
