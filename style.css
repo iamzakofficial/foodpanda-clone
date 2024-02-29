@@ -418,7 +418,15 @@ section.partners {
     color: var(--primary-color);
     justify-content: center;
     align-items: center;
-    padding: .8rem;
+    padding: .8rem;    
+  }
+
+  a svg {
+    border: 1px solid lightgray;
+    border-radius: 100px;
+    height: 40px;
+    width: 40px;
+    margin-right: 1rem;
   }
 
   .footer-branding__logos-dh{
@@ -563,10 +571,6 @@ section.partners {
     display: flex;
     justify-content: space-around;
     align-items: center;
-  }
-
-  a svg{
-    width: 50px;
   }
 }
 
