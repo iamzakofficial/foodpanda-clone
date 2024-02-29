@@ -8,9 +8,9 @@
   --primary-color: #E21B70;
 }
 
-body {
+html, body {
   font-family: "Open Sans";
-  overflow-x: hidden !important;
+  overflow-x: hidden;
 }
 
 .max-w-xl {
